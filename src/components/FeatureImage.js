@@ -6,7 +6,7 @@ import {FeaturedImageWrapper} from "../elements"
 export const FeatureImage = ({fixed}) => {
     const data = useStaticQuery(graphql`
         query{
-            imageSharp(fixed: {originalName: {eq:"machineLearning.jpg"}}) {
+            imageSharp(fixed: {originalName: {eq:"bleh.png"}}) {
                 fixed {
                     ...GatsbyImageSharpFixed
                 }
@@ -21,7 +21,7 @@ export const FeatureImage = ({fixed}) => {
                 left: 0,
                 top: 0,
                 width: "100%",
-                height: "100%",
+                height: "115%",
             }} />
 
         </FeaturedImageWrapper>

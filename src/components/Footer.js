@@ -1,15 +1,8 @@
 import React from "react"
 import {FooterWrapper, FooterSocialWrapper, P,} from "../elements"
-import {useStaticQuery, graphql, } from "gatsby"
-
 
 
 export const Footer = () => {
-    // const data = useStaticQuery(graphql`
-    //     query {
-
-    //     }
-    // `)
 
     return (
         <FooterWrapper>
