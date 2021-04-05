@@ -1,6 +1,6 @@
 import React from "react"
-import {FooterWrapper, FooterSocialWrapper} from "../elements"
-import {useStaticQuery, graphql} from "gatsby"
+import {FooterWrapper, FooterSocialWrapper, P,} from "../elements"
+import {useStaticQuery, graphql, } from "gatsby"
 
 
 
@@ -14,7 +14,7 @@ export const Footer = () => {
     return (
         <FooterWrapper>
             <FooterSocialWrapper>
-                <p>©2021 Heriot-Watt University. All right reserved.</p>
+                <P size="xSmall" color="dark3">©2021 Heriot-Watt University. All right reserved.</P>
             </FooterSocialWrapper>
         </FooterWrapper>
     )
