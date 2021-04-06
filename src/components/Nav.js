@@ -2,6 +2,7 @@ import React from "react"
 import {useStaticQuery, Link, graphql} from "gatsby"
 import {NavWrapper} from "../elements"
 
+
 export const Nav = () =>{
 
     const data = useStaticQuery(graphql`
@@ -15,6 +16,7 @@ export const Nav = () =>{
     return(<NavWrapper>
         <Link to="/">
             <img src={data.logo.publicURL} alt=" ML Logo" />
+            
         </Link>
     </NavWrapper>
     )
