@@ -1,6 +1,7 @@
 import React from "react"
 import {graphql} from "gatsby"
 import {MDXRenderer} from "gatsby-plugin-mdx"
+import Pdf from '../documents/thesis.pdf';
 
 import {H1} from "../elements"
 import {Container, Post, FeatureImage} from "../components"
@@ -12,8 +13,9 @@ const singlePost = ({data}) => {
         <Container>
             <FeatureImage fixed={featureImage} />
             <Post>
-                <H1 margin="0 0 2rem 0">{data.mdx.frontmatter.title}</H1>
+                <H1 margin="0 0 2rem 0" textAlign="center">{data.mdx.frontmatter.title}</H1>
                 <MDXRenderer>{data.mdx.body}</MDXRenderer>
+                    <a href= {Pdf}>Show Thesis</a>
             </Post>
         </Container>
     )
@@ -36,6 +38,7 @@ export const pageQuery = graphql`
                         fixed{
                             ...GatsbyImageSharpFixed
                         }
+
                     }
                 }
             }

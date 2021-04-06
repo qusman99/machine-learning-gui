@@ -1,16 +1,16 @@
 import React from "react"
 import {graphql} from "gatsby"
-import {Container, Content, ContentCard, FeatureImage, Pagination,} from "../components"
+import {Container, Content, ContentCard, FeatureImage,} from "../components"
 import {H1, P} from "../elements"
 
 const allAlgo = ({pageContext, data}) => {
-    const {currentPage, numPages}  = pageContext
-    const isFirst = currentPage === 1
+    // const {currentPage, numPages}  = pageContext
+    // const isFirst = currentPage === 1
 
-    const isLast = currentPage === numPages
+    // const isLast = currentPage === numPages
 
-    const prevPage = currentPage -1 === 1 ? "/": `/${currentPage - 1}`
-    const nextPage = `/${currentPage + 1}`
+    // const prevPage = currentPage -1 === 1 ? "/": `/${currentPage - 1}`
+    // const nextPage = `/${currentPage + 1}`
 
     const posts = data.allMdx.edges
 
@@ -18,8 +18,12 @@ const allAlgo = ({pageContext, data}) => {
         <Container>
             <FeatureImage />
             <Content>
-                <H1 textAlign="center" margin="0 0 1rem 0">This is something else</H1>
-                <P color="dark2" textAlign="center">Lorem ipsum dolor</P>
+                <H1 textAlign="center" margin="0 0 1rem 0">Machine Learning Algorithms</H1>
+                <P color="dark2" textAlign="center">This site shows the results of the different Machine Learning Algorithms run on the Middle Eastern dataset.
+                <br /> 
+                <br />
+                A much more detailed info on these algorithms is stated in the following pages </P>
+
                 {posts.map(post =>(
                     <ContentCard 
                         key={post.node.frontmatter.slug}
