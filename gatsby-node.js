@@ -14,7 +14,7 @@ exports.createPages = async function({actions, graphql}){
         }
     `)
 
-    const perPage = 3
+    const perPage = 4
     const numPage = Math.ceil(data.allMdx.edges.length/perPage)
 
     Array.from({length : numPage}).forEach((_, i) => {

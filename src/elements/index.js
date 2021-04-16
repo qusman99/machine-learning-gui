@@ -6,7 +6,6 @@ export * from "./ContentElements"
 export * from "./TypographyElements"
 export * from "./CardElements"
 export * from "./ButtonElements"
-export * from "./PaginationElements"
 export * from "./PostElements"
 
 
