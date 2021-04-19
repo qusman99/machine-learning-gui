@@ -3,7 +3,7 @@ import {graphql} from "gatsby"
 import {Container, Content, ContentCard, FeatureImage} from "../components"
 import {H1, P} from "../elements"
 
-const allAlgo = ({pageContext, data}) => {
+const allAlgo = ({data}) => {
     const posts = data.allMdx.edges
 
     return(
